@@ -1,0 +1,55 @@
+.bg-green{
+    background-color: green;
+}
+.container-chef{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1050px) {   .container-chef {     width: 600px;     height: 300px;     /* Otros estilos adicionales si es necesario */   } }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-info, .social-media, .legal-info {
+    flex: 1;
+    padding: 10px;
+}
+.contact-info i, .social-media i {
+    margin-right: 5px;
+}
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.social-media a:hover {
+    text-decoration: underline;
+}
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.navbar-brand:hover {
+    color: yellow;
+}
+.container-global{
+    height: ;
+    width: ;
+}
