@@ -1,5 +1,5 @@
 .bg-green{
-    background-color: green;
+    background-color: cornflowerblue;
 }
 .container-chef{
     width: 1200px;
@@ -49,7 +49,11 @@ footer {
 .navbar-brand:hover {
     color: yellow;
 }
+
+.nav-item:hover{
+    color: yellow;
+}
 .container-global{
-    height: ;
-    width: ;
+    /*height: ;
+    width: */
 }
