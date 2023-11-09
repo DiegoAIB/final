@@ -28,21 +28,20 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo1.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
             <a class="navbar-brand " href="index.html">Nuestra cocina</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler custom-white-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-white-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="imagenes.html">Imagenes</a>
+                        <a class="nav-link active text-white" aria-current="page" href="imagenes.html">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="recetas.html">Recetas</a>
+                        <a class="nav-link text-white" href="recetas.html">Imagenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contacto.html">Soporte</a>
+                        <a class="nav-link text-white" href="contacto.html">Contactanos</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -53,32 +52,71 @@
 
 <br>
 <div class="container">
-    <h2>Contactanos</h2>
+    <h1>Contactanos</h1>
     <h5>
-    Puedes encontrarno en tanto tanto donde contamos con un excelente servicio
+        Puedes contactarnos enviandonos un mensaje desde la pagina web, donde luego el personal te respondera en tu correo
 
     </h5>
 </div>
 
+<div class="container mt-5">
+    <h3>Contacto</h3>
+    <form action="procesar_formulario.php" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+        </div>
+        <div class="mb-3">
+            <label for="preguntas" class="form-label">Preguntas:</label>
+            <textarea class="form-control" id="preguntas" name="preguntas" rows="4" required></textarea>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">  Enviar Formulario
+    </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Gracias por su opinion!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Muy pronto lo atenderemos
+                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<br>
 
 <!-- parte inferior -->
 
 
-<div class="prueba">
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <img src="assets/img/logo.jpg" class="rounded me-2" alt="...">
-            <strong class="me-auto">Bootstrap</strong>
-            <small>11 mins ago</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-            Hello, world! This is a toast message.
-        </div>
-    </div>
-</div>
 
-<div class="">
+
+
+<!-- FIN DEL CONTENIDO DE LA WEB-->
+
+<!-- AQUÍ SE AGREGAN LOS JS PERSONALIZADOS -->
+
+<!-- JS BOOTSTRAP LOCAL (IDEAL)-->
+<script src="assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<div class="container-global">
     <footer>
         <div class="footer-content">
             <div class="contact-info">
@@ -88,9 +126,9 @@
             </div>
             <div class="social-media">
                 <h3>Redes Sociales</h3>
-                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i> Pinterest</a>
             </div>
             <div class="legal-info">
                 <h3>Términos y Condiciones</h3>
@@ -100,12 +138,4 @@
         </div>
     </footer>
 </div>
-
-<!-- FIN DEL CONTENIDO DE LA WEB-->
-
-<!-- AQUÍ SE AGREGAN LOS JS PERSONALIZADOS -->
-
-<!-- JS BOOTSTRAP LOCAL (IDEAL)-->
-<script src="assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
 </html>

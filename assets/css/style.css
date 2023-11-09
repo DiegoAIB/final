@@ -53,7 +53,28 @@ footer {
 .nav-item:hover{
     color: yellow;
 }
-.container-global{
-    /*height: ;
-    width: */
+
+
+.carousel-item{
+    max-height: 800px;
 }
+
+
+.custom-white-icon{
+    background-color: #fff;
+}
+
+.container-global{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-global1{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
